@@ -3,6 +3,8 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const webpack = require('webpack');
 
 const htmlFile = /^([-_\d\w]+).html$/i;
 const srcPath = path.resolve(__dirname, 'src');
@@ -114,6 +116,13 @@ module.exports = ({ development }) => {
           }
         ],
       }),
+      new CleanWebpackPlugin(),
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery'
+      }),
+      
     ],
     resolve: {
       extensions: ['.js'],

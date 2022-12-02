@@ -1,0 +1,21 @@
+.gallery {
+    &__inner {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-top: -25px;
+    }
+    &__card {
+        
+        border: 1px solid black;
+        margin-top: 25px;
+        /* flex-basis: calc(20% - 25px); */
+    }
+    &__card img {
+        width: 25%;
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}

@@ -43,7 +43,8 @@ a {
 .container_white {
     background-color: #ffffff;
     color: #000000;
-    & .p {
+    & p {
         color: rgba($color: #000000, $alpha: 0.7);
+        font-size: 16px;
     }
 }

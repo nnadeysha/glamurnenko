@@ -1,0 +1,26 @@
+.process {
+
+    &__text-content {
+        margin-top: -20px;
+        & .text_big-letter-space {
+            line-height: 3em;
+        }
+        & .text_small {
+            padding: 20px 0;
+        }
+    }
+    
+}
+
+.bg-yellow {
+    &_dark {
+        background-color: #fed000;
+    }
+    &_light {
+        background-color: #feef00;
+    }
+}
+
+.table-bordered {
+    border: #f6ed3a;
+}

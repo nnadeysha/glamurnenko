@@ -3,15 +3,95 @@ html {
 
 }
 
+body {
+    background: url('./assets/images/bg-main.png') top #000 no-repeat;
+    font-family: 'Roboto', regular;
+    color: #ffffff;
+}
+
 *,
 *::before,
 *::after {
     box-sizing: inherit;
 }
 
-.container {
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
+p, h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #ffffff;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+    &:hover {
+        color: #6fc4d4;
+    }
+}
+
+
+
+.title_custom {
+    font-family: 'Oranienbaum', serif;
+    text-transform: uppercase;
+}
+
+.header {
+    height: 35em;
+    padding-top: 30px;
+    & .nav-item {
+      font-size: 18px;
+      margin-right: 23px; 
+
+      & .nav-link {
+        padding: 0;
+      }
+    }
+
+    &__content {
+        height: 100%;
+    }
+}
+
+.networks {
+
+    & .icon {
+        display: block;
+        width: 25px;
+        height: 25px;
+        background-repeat: no-repeat;
+        margin-right: 5px;
+        &:hover {
+            background-position: 0 -25px; 
+            opacity: 0.5;
+       }
+        
+    }
+    &__inst {
+        background: url('./assets/icons/1438557260_inst_4.png');
+        
+    }
+    &__fb {
+        background-image: url('./assets/icons/1438557245_ab_4.png');
+    }
+    &__vk {
+        background-image: url('./assets/icons/1438423986_vk_3.png');
+    }
+}
+
+.phones p {
+    text-align: right;
+}
+
+.mission {
+    margin-top: 50px;
+    &__title{
+        font-size: 20px;
+        padding-bottom: 5px;
+    }
+    &__subtitle {
+        font-size: 16px;
+        text-decoration: underline;
+        color: #cdb380;
+    }
 }

@@ -13,10 +13,16 @@
         box-shadow: 0 0 30px 5px rgba(221, 221, 221, 1);
        }  
        
-       & .text div {
-        margin: 20px 0;
-        
-    }
+       & .text {
+            div {
+                margin: 20px 0;
+                
+                }
+            &_black{
+                color: #000000;
+            }
+        }
+       
     }
 
     & .cards {

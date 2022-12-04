@@ -25,11 +25,11 @@
                 text-align: start;
             }
 
-        }
-        @media (min-width: 992px) { 
-            justify-content: center;
+    }
+    @media (min-width: 992px) { 
+        justify-content: center;
             align-items: flex-start;
-        }
+}
     }
 
     &__contacts {
@@ -44,17 +44,10 @@
         @media (min-width: 992px) { display: flex; flex-direction: row; position: relative;
             top: 0;
             right:0;}
-        }
+    }
 
     &__menu {
-        
-        @media (min-width: 320px) { 
-            padding: 25px 0;
-         }
-
-        @media (min-width: 992px) { 
-            padding: 20px 15px;
-         }
+        padding: 20px 15px;
     }
 
     

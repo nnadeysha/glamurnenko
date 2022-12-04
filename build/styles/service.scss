@@ -6,6 +6,7 @@
     }
 
     & .cards__item {
+       margin: 35px;
        transition: ease-in-out .3s;
        padding: 5px;
 
@@ -20,14 +21,6 @@
     }
 
     & .cards {
-        width: 100%;
-        justify-content: space-between;
-        padding: 0 35px;
-        flex-wrap: wrap;
-        @media (min-width: 576px) {
-            justify-content: space-around;
-         }
-         @media (min-width: 1200px) { justify-content: space-between;}
         &__btn {
             display: block;
             width: 100%;

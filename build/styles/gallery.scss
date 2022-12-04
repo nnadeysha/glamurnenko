@@ -7,8 +7,6 @@
     }
     &__card {
         margin-top: 25px;
-        @media (min-width: 320px) { flex-direction: column; }
-        @media (min-width: 992px) { flex-direction: row; }
     }
     &__card img {
         width: 100%;

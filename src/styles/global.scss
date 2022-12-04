@@ -24,11 +24,8 @@ a {
     color: #ffffff;
     transition: ease-in-out .3s;
     cursor: pointer;
+    display: block;
     
-    &:hover {
-        color: #6fc4d4;
-        text-decoration: none;
-    }
 }
 
 button {
@@ -41,7 +38,12 @@ button {
     transition: ease-in-out .3s;
   }
 
-
+.nav__link {
+    &:hover {
+        color: #6fc4d4;
+        text-decoration: none;
+    }
+}
 .title_custom {
     font-family: 'Oranienbaum', serif;
     text-transform: uppercase;

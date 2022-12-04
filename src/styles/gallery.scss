@@ -6,16 +6,23 @@
         margin-top: -25px;
     }
     &__card {
-        
-       
         margin-top: 25px;
-        /* flex-basis: calc(20% - 25px); */
     }
     &__card img {
-        width: 25%;
+        width: 100%;
         height: auto;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
+    }
+    &__link {
+        display: block;
+        max-width: 180px;
+        
+    }
+    &__text {
+        font-size: 20px;
+        margin-left: 50px;
+        max-width: 300px;
     }
 }

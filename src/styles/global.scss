@@ -1,12 +1,14 @@
 html {
     box-sizing: border-box;
-
+    scroll-behavior: smooth;
 }
 
 body {
     background: url('./assets/images/bg-main.png') top #000 no-repeat;
     font-family: 'Roboto', regular;
     color: #ffffff;
+    position: relative;
+    scroll-behavior: smooth;
 }
 
 *,

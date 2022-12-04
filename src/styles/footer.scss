@@ -1,42 +1,44 @@
 .footer {
-    padding-bottom: 30px;
-    &__btn {   
-        margin: 50px;
-        & a{
-            width: 130px;
-            border: 2px solid #ffffff;
-            padding: 10px 0;
-            text-transform: uppercase;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+  padding-bottom: 30px;
+  &__btn {
+    margin: 50px;
+    & a {
+      width: 130px;
+      border: 2px solid #ffffff;
+      padding: 10px 0;
+      text-transform: uppercase;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-            &:hover {
-                background-color: #6fc4d4;
-                text-decoration: none;
-                color: #ffffff;
-            }
-            & span {
-                display: block;
-                padding-top: 5px;
-            }
-            & svg {
-                
-                width: 25px;
-                height: 25px;
-                
-            }
-        }
+      &:hover {
+        background-color: #6fc4d4;
+        text-decoration: none;
+        color: #ffffff;
+      }
+      & span {
+        display: block;
+        padding-top: 5px;
+      }
+      & svg {
+        width: 25px;
+        height: 25px;
+      }
     }
+  }
 
-    &__menu {
-        line-height: 30px;
-        max-width: 300px;
-    }
+  &__menu {
+    line-height: 30px;
+    max-width: 50%;
+  }
+}
 
-    &__phones {
-        display: flex;
-        flex-direction: row;
+.nav {
+  &__item {
+    &_phones {
+      display: flex;
+      flex-direction: row;
     }
+  }
 }

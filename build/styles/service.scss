@@ -1,47 +1,59 @@
 .service {
-    margin-top: -17px;
+  margin-top: -17px;
 
-    &__img {
-        padding: 20px 0;
-    }
+  &__img-wrapper {
+    padding: 20px 0;
+  }
 
-    & .cards__item {
-       margin: 35px;
-       transition: ease-in-out .3s;
-       padding: 5px;
+  & .cards {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 35px;
+    flex-wrap: wrap;
+    @media (min-width: 576px) {
+      justify-content: space-around;
+    }
+    @media (min-width: 1200px) {
+      justify-content: space-between;
+    }
+    &__btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 15px 0;
+      background: #fe0a38;
+    }
+    &__old-price {
+      position: relative;
+      font-size: 20px;
+      margin-top: 40px;
+      &:before {
+        content: '';
+        width: 80px;
+        height: 0.1em;
+        background: #ff0000;
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: rotate(-7deg);
+      }
+    }
+  }
+}
+.card-item {
+  transition: ease-in-out 0.3s;
+  padding: 5px;
 
-       &:hover {
-        box-shadow: 0 0 30px 5px rgba(221, 221, 221, 1);
-       }  
-       
-       & .text div {
-        margin: 20px 0;
-        
-    }
-    }
+  &:hover {
+    box-shadow: 0 0 30px 5px rgba(221, 221, 221, 1);
+  }
 
-    & .cards {
-        &__btn {
-            display: block;
-            width: 100%;
-            text-align: center;
-            padding: 15px 0;
-            background: #fe0a38;
-        }
-        &__old-price {
-            position: relative;
-            font-size: 20px;
-            margin-top: 40px ;
-            &:before {
-                content: "";
-                width: 80px;
-                height: 0.1em;
-                background: #ff0000;
-                position: absolute;
-                top: 50%;
-                left: 35%;
-                transform: rotate(-7deg);
-            }
-        }
+  & .text {
+    div {
+      margin: 20px 0;
     }
+    &_black {
+      color: #000000;
+    }
+  }
 }

@@ -24,8 +24,10 @@ a {
     color: #ffffff;
     transition: ease-in-out .3s;
     cursor: pointer;
+    
     &:hover {
         color: #6fc4d4;
+        text-decoration: none;
     }
 }
 
@@ -63,5 +65,15 @@ button {
     & img {
         max-width: 100%;
         width: 100%;
+    }
+}
+
+.btn_order{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 3px;
+    &:hover {
+        opacity: 0.7;
     }
 }

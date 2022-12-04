@@ -2,6 +2,7 @@
     height: 40em;
     padding-top: 30px;
     padding-bottom: 100px;
+    position: relative;
     & .nav-item {
       font-size: 18px;
       margin-right: 23px; 
@@ -14,6 +15,23 @@
     &__content {
         height: 100%;
     }
+
+    &__contacts {
+        @media (min-width: 320px) { 
+            flex-direction: column; 
+            position: absolute;
+            top: -20px;
+            right: 20px;
+        }
+    
+
+        @media (min-width: 992px) { display: flex; flex-direction: row; position: relative;
+            top: 0;
+            right:0;}
+    }
+
+    
+
 
     
 }
@@ -59,4 +77,11 @@
         text-decoration: underline;
         color: #cdb380;
     }
+}
+.navbar-toggler {
+    border: 2px #fff solid;
+    border-radius: 3px;
+}
+nav {
+    padding: 0 !important;
 }

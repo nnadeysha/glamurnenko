@@ -1,5 +1,5 @@
 .help {
-    & .container {
+    & .container_white {
         position: relative; 
     }
 
@@ -7,26 +7,6 @@
         text-transform: uppercase;
         font-size: 20px;
         padding-bottom: 15px;
-    }
-    
-    &__image {
-        
-        width: 100%;
-        
-        margin: 0 auto;
-        background: url('./assets/images/form-reservation-bigcolor.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        @media (min-width: 320px) { min-width: 320px; height: 200px;}
-        @media (min-width: 576px) { max-width: 540px; height: 300px;}
-
-
-@media (min-width: 768px) { max-width: 720px; height: 500px;}
-
-@media (min-width: 992px) { max-width: 960px; height: 600px;}
-
-@media (min-width: 1200px) { max-width: 1140px; height: 700px;}
     }
 }
     

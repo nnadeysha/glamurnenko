@@ -29,6 +29,15 @@ a {
     }
 }
 
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+  }
 
 
 .title_custom {
@@ -46,5 +55,13 @@ a {
     & p {
         color: rgba($color: #000000, $alpha: 0.7);
         font-size: 16px;
+    }
+}
+
+.img-wrapper {
+    width: 100%;
+    & img {
+        max-width: 100%;
+        width: 100%;
     }
 }

@@ -6,6 +6,7 @@
   &__wrapper {
     position: relative;
   }
+
   & .nav-item {
     font-size: 18px;
     margin-right: 23px;
@@ -29,26 +30,29 @@
     }
   }
 
-  &__contacts {
-    @media (min-width: 320px) {
-      flex-direction: column;
-      position: absolute;
-      top: -20px;
-      right: 20px;
-    }
+   &__contacts {
 
-    @media (min-width: 992px) {
-      display: flex;
-      flex-direction: row;
-      position: relative;
-      top: 0;
-      right: 0;
-    }
-  }
+      @media (min-width: 320px) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media (min-width: 992px) {
+        flex-direction: row;
+        width: 20%;
+        padding-right: 15px;
+      }
+  } 
 
   &__menu {
+    max-width: 1110px;
     font-family: 'Oranienbaum', serif;
     text-transform: uppercase;
+
+    nav {
+      width: 100%;
+      
+    }
 
     @media (min-width: 320px) {
       padding: 25px 0;
@@ -105,9 +109,30 @@
   }
 }
 .navbar-toggler {
-  border: 2px #fff solid;
+  border: 2px #ffffff solid;
   border-radius: 3px;
+  margin-left: 20px;
+  
 }
-nav {
-  padding: 0 !important;
+.navbar-toggler-icon {
+  background-color: #ffffff;
+  border-radius: 3px;
+  transition: ease-in-out 0.3s;
+
+  &:hover {
+    background-color: #6fc4d4;
+  }
+}
+
+.navbar {
+  
+  @media (min-width: 320px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    @media (min-width: 992px) {
+      flex-direction: row;
+      
+    }
+
 }

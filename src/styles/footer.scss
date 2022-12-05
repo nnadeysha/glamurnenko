@@ -39,6 +39,12 @@
     &_phones {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
+
+      a {
+        display: flex;
+        flex-wrap: nowrap;
+      }
     }
   }
 }

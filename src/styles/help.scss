@@ -6,6 +6,12 @@
     font-size: 20px;
     padding-bottom: 15px;
   }
+  @media (min-width: 320px) {
+      padding-top: 60px;
+    }
+    @media (min-width: 768px) {
+      padding-top: 0;
+    }
 
   &__box {
     left: 0px;

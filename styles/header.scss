@@ -105,8 +105,18 @@
   }
 }
 .navbar-toggler {
-  border: 2px #fff solid;
+  border: 2px #ffffff solid;
   border-radius: 3px;
+  
+}
+.navbar-toggler-icon {
+  background-color: #ffffff;
+  border-radius: 3px;
+  transition: ease-in-out 0.3s;
+
+  &:hover {
+    background-color: #6fc4d4;
+  }
 }
 nav {
   padding: 0 !important;
